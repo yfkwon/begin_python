@@ -83,3 +83,89 @@ b = a
 print(a is b)
 
 # 문자열
+s = '가나다'
+ss = "가나다"
+
+sss = """아리랑
+ 아리아
+ 아리아
+ 아라리오
+ """
+
+print(s, ss, sss)
+
+s = '아리아\n아리랑\n아라이요'
+print(s)
+
+# 문자열 포맷팅
+
+p = "이름: %s 나이: %d" % ("김유신", 65)
+print(p)
+
+p = "X = %0.3f, Y = %10.2f" % (3.141592, 3.141592)
+print(p)
+
+
+path = r'c:\Temp\test.csv'
+print(path)
+
+s = ','.join(['가나', '다라', '마바'])
+print(s)
+
+s = ''.join(['가나', '다라', '마바'])
+print(s)
+
+items = '가나,다라,마바'.split(',')
+print(items)
+
+departure, _, arrival = "Seattle-Seoul".partition('-')
+print(departure)
+
+s = "Name: {0}, Age: {1}".format("강정수", 30)
+print(s)
+
+s = "Name: {name}, Age: {age}".format(name="강정수", age=30)
+print(s)
+
+area = (10, 20)
+s = "width: {x[0]}, height: {x[1]}".format(x = area)
+print(s)
+
+text = b"hello"
+for c in text:
+    print(c)
+
+s1 = "hello"
+b1 = s1.encode('utf-8')
+print(b1)
+for c in b1:
+    print(c)
+
+s2 = b1.decode('utf-8')
+print(s2)
+
+# 조건문
+x = 10
+if x < 10:
+    print(x)
+    print("한자리수")
+
+if x < 100: print(x)
+
+if x < 10:
+    print("한자리수")
+elif x < 100:
+    print("두자리수")
+else:
+    print("세자리수")
+
+# 반복문
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+
+sums = 0
+for i in range(11):
+    sums += i
+print(sums)
